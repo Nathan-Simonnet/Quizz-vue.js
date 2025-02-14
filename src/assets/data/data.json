@@ -1,0 +1,42 @@
+[
+    {
+        "question": "Quelle méthode Javascript permet de filtrer les éléments d'un tableau",
+        "choices": [
+            "indexOf()",
+            "map()",
+            "filter()",
+            "reduce()"
+        ],
+        "answer": "filter()"
+    },
+    {
+        "question": "Quelle méthode Javascript permet de vérifier si un élément figure dans un tableau",
+        "choices": [
+            "isNaN()",
+            "includes()",
+            "findIndex()",
+            "isOdd()"
+        ],
+        "answer": "includes()"
+    },
+    {
+        "question": "Quelle méthode transforme du JSON en un objet Javascript ?",
+        "choices": [
+            "JSON.parse()",
+            "JSON.stringify()",
+            "JSON.object()",
+            "JSON.toJS"
+        ],
+        "answer": "JSON.parse()"
+    },
+    {
+        "question": "Quel objet Javascript permet d'arrondir à l'entier le plus proche",
+        "choices": [
+            "Math.ceil()",
+            "Math.floor()",
+            "Math.round()",
+            "Math.random()"
+        ],
+        "answer": "Math.round()"
+    }
+]
