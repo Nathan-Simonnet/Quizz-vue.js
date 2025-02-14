@@ -3,7 +3,7 @@ Quizz sur javascript
 
 ## Comment l'utiliser ? 
 yarn install
-yarn start
+yarn dev
 
 Une bonne réponse par questions
 Temps illimité pour y répondre
