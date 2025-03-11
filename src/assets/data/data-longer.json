@@ -1,0 +1,245 @@
+[
+    {
+        "question": "Quelle méthode JavaScript permet de trier un tableau ?",
+        "choices": ["sort()", "order()", "arrange()", "filter()"],
+        "answer": "sort()"
+    },
+    {
+        "question": "Quelle méthode JavaScript est utilisée pour concaténer deux tableaux ?",
+        "choices": ["concat()", "merge()", "join()", "combine()"],
+        "answer": "concat()"
+    },
+    {
+        "question": "Quelle méthode JavaScript permet d'exécuter une fonction après un certain temps ?",
+        "choices": ["setTimeout()", "setInterval()", "wait()", "delay()"],
+        "answer": "setTimeout()"
+    },
+    {
+        "question": "Quelle méthode JavaScript permet de récupérer une partie d'un tableau sans le modifier ?",
+        "choices": ["slice()", "splice()", "split()", "cut()"],
+        "answer": "slice()"
+    },
+    {
+        "question": "Quelle propriété JavaScript permet d'obtenir la longueur d'un tableau ?",
+        "choices": ["size", "length", "count", "items"],
+        "answer": "length"
+    },
+    {
+        "question": "Quelle est la sortie de 'typeof null' en JavaScript ?",
+        "choices": ["object", "null", "undefined", "string"],
+        "answer": "object"
+    },
+    {
+        "question": "Quel opérateur est utilisé pour comparer la valeur et le type en JavaScript ?",
+        "choices": ["==", "===", "!=", "!=="],
+        "answer": "==="
+    },
+    {
+        "question": "Quelle méthode JavaScript permet d'itérer sur un tableau et d'exécuter une fonction sur chaque élément ?",
+        "choices": ["map()", "forEach()", "reduce()", "filter()"],
+        "answer": "forEach()"
+    },
+    {
+        "question": "Quelle est la sortie de 'console.log(1 + '1')' ?",
+        "choices": ["11", "2", "NaN", "Error"],
+        "answer": "11"
+    },
+    {
+        "question": "Quelle fonction JavaScript est utilisée pour arrondir un nombre à l'entier supérieur ?",
+        "choices": ["Math.round()", "Math.ceil()", "Math.floor()", "Math.trunc()"],
+        "answer": "Math.ceil()"
+    },
+    {
+        "question": "Quelle est la sortie de 'console.log(typeof NaN)' ?",
+        "choices": ["number", "NaN", "undefined", "object"],
+        "answer": "number"
+    },
+    {
+        "question": "Comment vérifier si une variable est un tableau en JavaScript ?",
+        "choices": ["typeof variable === 'array'", "Array.isArray(variable)", "variable instanceof Array", "variable.isArray()"],
+        "answer": "Array.isArray(variable)"
+    },
+    {
+        "question": "Quel mot-clé permet de déclarer une constante en JavaScript ?",
+        "choices": ["var", "let", "const", "static"],
+        "answer": "const"
+    },
+    {
+        "question": "Quelle méthode est utilisée pour supprimer le premier élément d'un tableau en JavaScript ?",
+        "choices": ["pop()", "shift()", "splice()", "remove()"],
+        "answer": "shift()"
+    },
+    {
+        "question": "Quelle est la sortie de 'console.log([] == false)' ?",
+        "choices": ["true", "false", "undefined", "Error"],
+        "answer": "true"
+    },
+    {
+        "question": "Quel est le résultat de 'console.log(0.1 + 0.2 === 0.3)' ?",
+        "choices": ["true", "false", "undefined", "Error"],
+        "answer": "false"
+    },
+ 
+    {
+        "question": "Quelle méthode JavaScript permet d'enlever les espaces blancs en début et fin de chaîne ?",
+        "choices": ["trim()", "slice()", "replace()", "split()"],
+        "answer": "trim()"
+    },
+    {
+        "question": "Comment ajouter une propriété à un objet existant en JavaScript ?",
+        "choices": ["object.newProp = value", "object.addProperty('newProp', value)", "object.push('newProp', value)", "object.property(newProp, value)"],
+        "answer": "object.newProp = value"
+    },
+
+    {
+        "question": "Quel opérateur compare les valeurs et les types en JavaScript ?",
+        "choices": ["==", "===", "!=", "!=="],
+        "answer": "==="
+    },
+    {
+        "question": "Quel objet permet de manipuler des dates en JavaScript ?",
+        "choices": ["Date", "Time", "Moment", "Clock"],
+        "answer": "Date"
+    },
+    {
+        "question": "Quelle fonction génère un nombre aléatoire entre 0 et 1 ?",
+        "choices": ["Math.rand()", "random()", "Math.random()", "rand()"],
+        "answer": "Math.random()"
+    },
+    {
+        "question": "Comment déclarer une fonction fléchée ?",
+        "choices": ["function =>", "=>", "=>()", "() =>"],
+        "answer": "() =>"
+    },
+    {
+        "question": "Quelle méthode retourne le premier élément d'un tableau qui satisfait une condition ?",
+        "choices": ["find()", "filter()", "some()", "every()"],
+        "answer": "find()"
+    },
+    {
+        "question": "Quelle méthode ajoute un élément à la fin d'un tableau ?",
+        "choices": ["push()", "pop()", "shift()", "unshift()"],
+        "answer": "push()"
+    },
+    {
+        "question": "Quelle méthode supprime le dernier élément d'un tableau ?",
+        "choices": ["shift()", "pop()", "slice()", "splice()"],
+        "answer": "pop()"
+    },
+    {
+        "question": "Quelle méthode extrait une portion d'un tableau sans modifier l'original ?",
+        "choices": ["slice()", "splice()", "split()", "copy()"],
+        "answer": "slice()"
+    },
+    {
+        "question": "Quelle fonction convertit une chaîne en nombre entier ?",
+        "choices": ["parseInt()", "Number()", "toInt()", "int()"],
+        "answer": "parseInt()"
+    },
+    {
+        "question": "Comment vérifier si une variable est un tableau ?",
+        "choices": ["Array.isArray()", "isArray()", "typeof", "instanceof"],
+        "answer": "Array.isArray()"
+    },
+    {
+        "question": "Quelle méthode retourne l'index du premier élément trouvé ?",
+        "choices": ["indexOf()", "findIndex()", "search()", "includes()"],
+        "answer": "indexOf()"
+    },
+    {
+        "question": "Quel opérateur logique représente OU ?",
+        "choices": ["&&", "||", "!", "??"],
+        "answer": "||"
+    },
+    {
+        "question": "Quelle méthode fusionne deux tableaux ?",
+        "choices": ["concat()", "merge()", "join()", "push()"],
+        "answer": "concat()"
+    },
+    {
+        "question": "Quelle méthode teste si au moins un élément satisfait une condition ?",
+        "choices": ["some()", "every()", "filter()", "find()"],
+        "answer": "some()"
+    },
+    {
+        "question": "Comment arrêter un intervalle défini avec setInterval ?",
+        "choices": ["clearTimeout()", "clearInterval()", "stopInterval()", "cancelInterval()"],
+        "answer": "clearInterval()"
+    },
+    {
+        "question": "Quelle méthode permet de chaîner des promesses ?",
+        "choices": ["catch()", "then()", "finally()", "all()"],
+        "answer": "then()"
+    },
+    {
+        "question": "Quelle syntaxe définit une promesse en JavaScript ?",
+        "choices": ["new Promise()", "Promise.create()", "promise()", "makePromise()"],
+        "answer": "new Promise()"
+    },
+    {
+        "question": "Quel mot-clé empêche la propagation d'un événement ?",
+        "choices": ["stop()", "prevent()", "stopPropagation()", "halt()"],
+        "answer": "stopPropagation()"
+    },
+    {
+        "question": "Comment ajouter une classe à un élément DOM ?",
+        "choices": ["setClass()", "addClass()", "classList.add()", "className()"],
+        "answer": "classList.add()"
+    },
+    {
+        "question": "Quelle méthode attend la résolution de plusieurs promesses ?",
+        "choices": ["Promise.all()", "Promise.race()", "Promise.wait()", "Promise.join()"],
+        "answer": "Promise.all()"
+    },
+    {
+        "question": "Quel type de variable est déclaré avec var en dehors d'une fonction ?",
+        "choices": ["locale", "globale", "privée", "constante"],
+        "answer": "globale"
+    },
+    {
+        "question": "Quelle méthode permet de récupérer les clés d'un objet ?",
+        "choices": ["Object.keys()", "Object.values()", "Object.entries()", "Object.get()"],
+        "answer": "Object.keys()"
+    },
+    {
+        "question": "Comment effectuer une deep copy d'un objet ?",
+        "choices": ["JSON.parse(JSON.stringify())", "Object.copy()", "spread {...obj}", "cloneObject()"],
+        "answer": "JSON.parse(JSON.stringify())"
+    },
+    {
+        "question": "Quelle méthode retourne un tableau des propriétés et valeurs d'un objet ?",
+        "choices": ["Object.entries()", "Object.keys()", "Object.values()", "Object.get()"],
+        "answer": "Object.entries()"
+    },
+    {
+        "question": "Quel opérateur fusionne des objets en ES6 ?",
+        "choices": ["Object.assign()", "spread {...obj}", "merge()", "Object.extend()"],
+        "answer": "spread {...obj}"
+    },
+    {
+        "question": "Quelle structure de données est utilisée pour stocker des paires clé-valeur en JavaScript ?",
+        "choices": ["Array", "Set", "Map", "Object"],
+        "answer": "Map"
+    },
+    {
+        "question": "Quelle méthode transforme un Map en tableau ?",
+        "choices": ["Array.from()", "Object.entries()", "Map.toArray()", "spread [...map]"],
+        "answer": "Array.from()"
+    },
+    {
+        "question": "Quel est l'intérêt principal de l'opérateur '??' ?",
+        "choices": ["Évite les valeurs null et undefined", "Évite les 0", "Évite les chaînes vides", "Concatène les valeurs"],
+        "answer": "Évite les valeurs null et undefined"
+    },
+    {
+        "question": "Comment définir une classe en JavaScript ?",
+        "choices": ["class MyClass {}", "new MyClass()", "define MyClass()", "prototype MyClass()"],
+        "answer": "class MyClass {}"
+    },
+    {
+        "question": "Quelle méthode permet de lier une fonction à un objet ?",
+        "choices": ["bind()", "call()", "apply()", "attach()"],
+        "answer": "bind()"
+    }
+    
+]

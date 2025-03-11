@@ -1,18 +1,18 @@
 <template>
   <div class="first-child" id="quiz">
-    <!-- Header -->
-    <header>
-      <div class="title-container">
-        <h1><span>Q</span>uiz</h1>
-        <div class="question-mark-container">
-          <router-link to="/">
-            <img :src="logo" alt="Question Mark Logo" />
-          </router-link>
-        </div>
-      </div>
-    </header>
 
-    <!-- Main Content -->
+    <header>
+            <router-link to="/">
+            <div class="title-container">
+                <h1><span>Q</span>uiz</h1>
+                <div class="question-mark-container">
+  
+                    <img src="/src/assets/images/question-mark-title.png" alt="Question Mark Logo" />
+                </div>
+            </div>
+             </router-link>
+        </header>
+
     <main>
       <div class="presentation-container">
         <p>{{ dataQuestions[counter].question }}</p>
@@ -27,7 +27,6 @@
       </div>
     </main>
 
-    <!-- Footer -->
     <footer>
       <div class="questions-counter-container">
         <span id="current-question-counter">{{ counter + 1 }}</span> /
@@ -38,17 +37,18 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import logo from "../assets/images/question-mark-title.png";
 import dataQuestions from "../assets/data/data.json";
-import { useScoreStore } from "../stores/score"; // Assuming you're using Pinia for state management
+import { useScoreStore } from "../stores/score"; 
 
 const router = useRouter();
 const counter = ref(0);
 const scoreStore = useScoreStore();
 
 // Handle button click
+ // ============================================
 const handleButtonClick = (event: Event, choice: string) => {
   const clickedButton = event.target as HTMLButtonElement;
   const answer = dataQuestions[counter.value].answer;
@@ -63,6 +63,7 @@ const handleButtonClick = (event: Event, choice: string) => {
   }
 
   // Disable buttons during transition
+  // ============================================
   const quizElement = document.getElementById("quiz");
   if (quizElement) quizElement.style.pointerEvents = "none";
 
@@ -82,13 +83,21 @@ const handleButtonClick = (event: Event, choice: string) => {
 };
 
 // Reset score on initial render
+ // ============================================
 onMounted(() => {
   scoreStore.resetScore();
 });
 </script>
 
 <style>
+#quiz{
 
+header,
+.presentation-container,
+.button-container,
+footer {
+    margin: 0;
+}
 .buttons-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -113,6 +122,8 @@ onMounted(() => {
 
 .bad-response {
   background: rgb(155, 59, 49) !important;
+}
+
 }
 
 @media screen and (max-width: 800px) {
@@ -154,4 +165,6 @@ onMounted(() => {
   }
 
 }
+
+
 </style>

@@ -1,14 +1,15 @@
 <template>
     <div id="home" class="first-child">
         <header>
+            <router-link to="/">
             <div class="title-container">
                 <h1><span>Q</span>uiz</h1>
                 <div class="question-mark-container">
-                    <router-link to="/">
+  
                     <img src="/src/assets/images/question-mark-title.png" alt="Question Mark Logo" />
-                    </router-link>
                 </div>
             </div>
+             </router-link>
         </header>
 
         <main>
@@ -36,7 +37,6 @@
 </template>
 
 <script setup lang="ts">
-import logo from "../assets/images/question-mark-title.png";
 import dataQuestions from "../assets/data/data.json";
 </script>
 
@@ -55,15 +55,6 @@ import dataQuestions from "../assets/data/data.json";
     width: 100%;
 }
 
-
-.title-container{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    
-    gap: 12px;
-}
-
 header,
 .presentation-container,
 .button-container,
@@ -78,6 +69,8 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        transform: translateX(16px);
 
         & h1 {
             color: var(--texts-color);
@@ -103,6 +96,14 @@ header {
     }
 }
 
+.title-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+    gap: 12px;
+}
+
 main {
     width: 824px;
 
@@ -122,8 +123,7 @@ main {
 
 footer {
     margin-bottom: 0;
-    margin-top: auto;
-    height: auto;
+    height: 10%;
     width: 100%;
 
     color: var(--title-container);
@@ -134,11 +134,10 @@ footer {
     align-items: flex-end;
 
     & .questions-counter-container {
+        transform: translateY(-24px);
         padding-right: 24px;
-        padding-bottom: 24px;
     }
 }
-
 
 @media screen and (max-width: 800px) {
 

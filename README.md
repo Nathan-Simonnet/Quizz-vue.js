@@ -5,11 +5,5 @@ Quizz sur javascript
 yarn install
 yarn dev
 
-Une bonne réponse par questions
-Temps illimité pour y répondre
-
-## Coming soon
-Bientôt la possibilité de choisir un nombre de questions (limités à quatres pour le moment)
-
-### Enjoy
+Une bonne réponse par questions et un temps illimité pour y répondre
 

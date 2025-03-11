@@ -47,8 +47,8 @@ body,
 #app {
   height: 100%;
   width: 100%;
+   /* border: 4px solid purple; */
 }
-
 
 button {
   height: 70px;
@@ -72,4 +72,12 @@ button:hover {
 button:active {
   transform: scale(0.9);
 }
+
+a{
+text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+}
+
 </style>
