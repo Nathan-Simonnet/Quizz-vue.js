@@ -2,16 +2,16 @@
   <div class="first-child" id="quiz">
 
     <header>
-            <router-link to="/">
-            <div class="title-container">
-                <h1><span>Q</span>uiz</h1>
-                <div class="question-mark-container">
-  
-                    <img src="/src/assets/images/question-mark-title.png" alt="Question Mark Logo" />
-                </div>
-            </div>
-             </router-link>
-        </header>
+      <router-link to="/">
+        <div class="title-container">
+          <h1><span>Q</span>uiz</h1>
+          <div class="question-mark-container">
+
+            <img src="/src/assets/images/question-mark-title.png" alt="Question Mark Logo" />
+          </div>
+        </div>
+      </router-link>
+    </header>
 
     <main>
       <div class="presentation-container">
@@ -41,14 +41,14 @@ import { ref, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import logo from "../assets/images/question-mark-title.png";
 import dataQuestions from "../assets/data/data.json";
-import { useScoreStore } from "../stores/score"; 
+import { useScoreStore } from "../stores/score";
 
 const router = useRouter();
 const counter = ref(0);
 const scoreStore = useScoreStore();
 
 // Handle button click
- // ============================================
+// ============================================
 const handleButtonClick = (event: Event, choice: string) => {
   const clickedButton = event.target as HTMLButtonElement;
   const answer = dataQuestions[counter.value].answer;
@@ -83,66 +83,77 @@ const handleButtonClick = (event: Event, choice: string) => {
 };
 
 // Reset score on initial render
- // ============================================
+// ============================================
 onMounted(() => {
   scoreStore.resetScore();
 });
 </script>
 
 <style>
-#quiz{
+#quiz {
 
-header,
-.presentation-container,
-.button-container,
-footer {
-    margin: 0;
-}
-.buttons-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0;
+  header{
+    margin-top: auto;
+    margin-bottom: 24px;
+  }
+
+  .buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
 
 
-  & .button-container {
-    margin: 24px;
+    & .button-container {
+      margin: 24px;
 
-    & button {
-      font-size: 22px;
-      height: 80px;
-      width: 280px;
+      & button {
+        font-size: 22px;
+        height: 80px;
+        width: 280px;
+      }
     }
   }
-}
 
-.good-response {
-  background: rgb(49, 138, 49) !important;
-}
+  .good-response {
+    background: rgb(49, 138, 49) !important;
+  }
 
-.bad-response {
-  background: rgb(155, 59, 49) !important;
-}
+  .bad-response {
+    background: rgb(155, 59, 49) !important;
+  }
 
+  footer {
+    margin-top: auto;
+    height: 10%;
+    width: 100%;
+
+    color: var(--title-container);
+    font-weight: bold;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    & .questions-counter-container {
+      transform: translateY(-24px);
+      padding-right: 24px;
+    }
+  }
 }
 
 @media screen and (max-width: 800px) {
 
   #quiz {
 
-    & header,
-    & main,
-    & footer {
-      margin: 0;
-    }
-
+  
     & header *,
     & main * :not(button),
     & footer * {
       transform: scale(0.9);
     }
 
-    .title-container{
+    .title-container {
       gap: 0;
     }
 
@@ -165,6 +176,4 @@ footer {
   }
 
 }
-
-
 </style>

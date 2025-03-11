@@ -27,12 +27,6 @@
             </div>
         </main>
 
-        <footer>
-            <div class="questions-counter-container">
-                <span id="current-question-counter">0</span> /
-                <span class="total-questions-counter">{{ dataQuestions.length }}</span>
-            </div>
-        </footer>
     </div>
 </template>
 
@@ -42,34 +36,27 @@ import dataQuestions from "../assets/data/data.json";
 
 <style>
 
-
 .first-child {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 
-.first-child {
     height: 100%;
     width: 100%;
 }
 
-header,
-.presentation-container,
-.button-container,
-footer {
-    margin: 24px;
+#home {
+    gap: 10%;
 }
 
 header {
-    margin-top: auto;
-
     & .title-container {
         display: flex;
         justify-content: center;
         align-items: center;
 
+        gap: 12px;
         transform: translateX(16px);
 
         & h1 {
@@ -96,14 +83,6 @@ header {
     }
 }
 
-.title-container{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    
-    gap: 12px;
-}
-
 main {
     width: 824px;
 
@@ -118,24 +97,6 @@ main {
             color: #DFE0E2;
             font-size: 24px;
         }
-    }
-}
-
-footer {
-    margin-bottom: 0;
-    height: 10%;
-    width: 100%;
-
-    color: var(--title-container);
-    font-weight: bold;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-
-    & .questions-counter-container {
-        transform: translateY(-24px);
-        padding-right: 24px;
     }
 }
 
